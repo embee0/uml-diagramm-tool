@@ -1,0 +1,5 @@
+class Knoten {
+  +wert: GZ
+  +naechster: Knoten
+}
+Knoten -right-> Knoten : naechster

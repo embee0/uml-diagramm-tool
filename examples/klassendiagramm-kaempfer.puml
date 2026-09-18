@@ -1,0 +1,9 @@
+class Kämpfer {
+  +name: Text
+  +level: GZ
+  +stärke: GZ
+  +hitpoints: GZ
+  +laufen()
+  +angreifen(ziel: Kämpfer)
+  +schadennehmen(menge: GZ)
+}

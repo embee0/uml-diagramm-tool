@@ -1,0 +1,11 @@
+class Charakter {
+  +name: Text
+  +level: GZ
+  +hitpoints: GZ
+  +schadennehmen(menge: GZ)
+}
+class Waffe {
+  +name: Text
+  +schaden: GZ
+}
+Charakter -right-> Waffe : trägt

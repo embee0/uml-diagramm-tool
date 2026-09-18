@@ -10,6 +10,17 @@ Ein einzelnes, abhängigkeitsfreies Python-Skript, das aus PlantUML-Text ein Kla
   brew install plantuml
   ```
 
+## Installation als Kommandozeilenbefehl (optional)
+
+Wer `kd` direkt aufrufen möchte, statt jedes Mal `uv run kd.py` zu schreiben:
+
+```bash
+chmod +x kd.py
+ln -s "$(pwd)/kd.py" ~/.local/bin/kd   # ~/.local/bin muss im PATH liegen
+```
+
+Danach funktioniert `kd diagramm.puml` von überall aus.
+
 ## Verwendung
 
 ```bash
@@ -56,7 +67,16 @@ class Beispiel {
 @enduml
 ```
 
-Siehe `examples/` für lauffähige Beispiele.
+## Beispiele
+
+In `examples/` liegen sechs lauffähige Beispiele – die ersten vier stammen direkt aus dem TGI-12-OOP-Skript:
+
+- `klassendiagramm-kaempfer.puml` – einfaches Klassendiagramm
+- `objektdiagramm-karl.puml` – dazugehöriges Objektdiagramm
+- `vererbung-charakter.puml` – Vererbung (`Charakter` → `Kämpfer`/`Magier`/`Schurke`)
+- `assoziation-charakter-waffe.puml` – Assoziation mit Rollenname (`Charakter -> Waffe : trägt`)
+- `reflexive-assoziation-knoten.puml` – **reflexive Assoziation**: ein `Knoten` (z. B. für eine verkettete Liste), der über `naechster` auf einen Knoten *derselben* Klasse zeigt
+- `eigenes-design.puml` – Beispiel für einen komplett selbst geschriebenen `skinparam`-Block
 
 ## Warum lokal statt Web-Dienst?
 

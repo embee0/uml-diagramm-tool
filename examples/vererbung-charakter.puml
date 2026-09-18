@@ -1,0 +1,22 @@
+class Charakter {
+  +name: Text
+  +level: GZ
+  +hitpoints: GZ
+  +schadennehmen(menge: GZ)
+}
+class Kämpfer {
+  +stärke: GZ
+  +rüstung: GZ
+  +kampfschrei()
+}
+class Magier {
+  +mana: GZ
+  +zaubern(spruch: Text)
+}
+class Schurke {
+  +schnelligkeit: GZ
+  +schleichen(): Boolean
+}
+Charakter <|-- Kämpfer
+Charakter <|-- Magier
+Charakter <|-- Schurke

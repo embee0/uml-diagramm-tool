@@ -1,0 +1,6 @@
+object "karl : Kämpfer" as karl {
+  name = "Karl"
+  level = 2
+  stärke = 16
+  hitpoints = 42
+}
