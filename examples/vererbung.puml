@@ -1,0 +1,13 @@
+class Fahrzeug {
+  +name: Text
+  +geschwindigkeit: GZ
+  +beschleunigen(delta: GZ)
+}
+class Auto {
+  +anzahlTueren: GZ
+}
+class Motorrad {
+  +hatSeitenwagen: Boolean
+}
+Fahrzeug <|-- Auto
+Fahrzeug <|-- Motorrad

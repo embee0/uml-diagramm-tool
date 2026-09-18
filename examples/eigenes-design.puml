@@ -1,0 +1,13 @@
+@startuml
+skinparam {
+  classAttributeIconSize 0
+  ClassBackgroundColor #E8F0FE
+  ClassBorderColor #1A5FB4
+  ClassArrowColor #1A5FB4
+}
+hide circle
+
+class Beispiel {
+  +eigenerStil: Boolean
+}
+@enduml
